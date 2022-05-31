@@ -13,7 +13,7 @@ nodejs yarn build-essential libpq-dev imagemagick git-all nano
 RUN gem install bundler
 
 # Seta nosso path
-ENV INSTALL_PATH /processo-seletivo-rails-esx
+ENV INSTALL_PATH /test-esx
 
 # Cria nosso diretório
 RUN mkdir -p $INSTALL_PATH

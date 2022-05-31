@@ -16,7 +16,7 @@ services:
     environment:
       - DB_PASSWORD=postgres
     volumes:
-      - .:/processo-seletivo-rails-esx
+      - .:/test-esx
       - gems:/gems
     depends_on:
       - db

@@ -3,7 +3,7 @@
 
 - Ruby 2.6.9
 
-- Rails 5.2.8
+- Rails 4.2.11.3
 
 - Host machine dependencies
   - [Docker (CE)](https://docs.docker.com/engine/installation/)
@@ -27,10 +27,16 @@
     - ```bash
         sudo service docker restart
       ```
-  - Load all needed gems into `gems_ops` external volume:
+  - Load all needed gems into `gems` external volume:
     ```bash
       docker-compose run --rm app bundle install
     ```
+  - Install the webpack:
+    ```bash
+      docker-compose run --rm app bundle exec rails webpacker:install
+    ```
+
+
 - Starting all stack (_add `-d` flag to run in background_):
 
   - Follow the `Starting all stack` section
@@ -50,10 +56,6 @@
 - Execute migration:
   ```bash
     docker-compose run --rm app bundle exec rails db:migrate
-  ```
-- Execute Webpack:
-  ```bash
-    docker-compose run --rm app bundle exec rails webpacker:install
   ```
 - Access database console:
   ```bash
