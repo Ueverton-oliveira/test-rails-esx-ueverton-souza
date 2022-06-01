@@ -1,0 +1,6 @@
+pt-BR:
+  certificates:
+    _certificates:
+      url: URL
+      status: Status
+    

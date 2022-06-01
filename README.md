@@ -64,5 +64,14 @@
 - Test a specific file
 
   ```bash
-    docker-compose run --rm app bundle exec rspec ./spec/services/name_file.rb'
-  ```# test-rails-esx-ueverton-souza
+    docker-compose run --rm app bundle exec rspec spec
+
+  ```
+  image.png
+
+- Request in /api/v1/historics
+```bash
+    image.png
+
+    Documentation link: https://documenter.getpostman.com/view/12106956/Uz5FJcGU
+ ```

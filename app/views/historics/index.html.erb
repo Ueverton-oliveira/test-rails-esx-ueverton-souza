@@ -1,0 +1,28 @@
+<h1><%= t('.title') %></h1>
+<html>
+  <body>
+    <% @historics.each do |historic| %>
+      <table class="table table-bordered table-hover">
+        <thead>
+         <tr>
+          <th><%= t('.created_at') %></th>
+          <th><%= t('.url') %></th>
+          <th><%= t('.status') %></th>
+          <th><%= t('.action') %></th>
+         </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= historic.created_at %></td>
+            <td><%= historic.certificate.url %></td>
+            <td><%= historic.certificate.status %></td>
+            <td><%= link_to "Remover", historic, method: :delete, 
+                    class: 'btn btn-danger',
+                    data: {confirm: t('.info.message_confirmation')}
+                 %>
+              </td>
+          </tr>
+        </tbody>
+    <% end %>
+  </body>
+</html>

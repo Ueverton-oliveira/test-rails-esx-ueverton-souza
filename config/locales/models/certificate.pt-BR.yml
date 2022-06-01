@@ -1,0 +1,10 @@
+pt-BR:
+  activerecord:
+    models:
+      certificate:
+        one: Certificado
+        other: Certificados
+
+    attributes:
+      url: URL
+      status: Status

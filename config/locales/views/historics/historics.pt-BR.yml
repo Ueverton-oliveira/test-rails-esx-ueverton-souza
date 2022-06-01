@@ -1,0 +1,12 @@
+pt-BR:
+  historics:
+    historics:
+    
+    index:
+      title: Histórico
+      created_at: Data e Hora
+      url: URL
+      status: Status
+      action: Ação
+      info:
+        message_confirmation: Tem certeza que deseja remover este histórico?

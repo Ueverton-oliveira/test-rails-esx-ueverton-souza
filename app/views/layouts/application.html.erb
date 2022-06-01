@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>TestEsx</title>
+    
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +10,21 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <%= nav_bar brand: "Certificados SSL", brand_link: root_url do %>
+    <%= menu_group do %>
+    <%= menu_item "Histórico", historics_path %>
+    <% end %>
+    <%= form_tag find_certificate_path, method: :get, class:"navbar-form navbar-right" do %>
+      <div class='form-group'>
+      <%= text_field_tag :link, @link, placeholder: 'Inserir URL',class:'form-control' %>
+      <%= button_to "Buscar", nil, class:"btn btn-default"%>
+      </div>
+    <% end %>
+  <% end %>
+
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div> 
   </body>
 </html>

@@ -1,0 +1,15 @@
+<% @certificates.each do |certificate| %>
+  <table class="table table-bordered table-hover">
+    <head>
+      <tr>
+        <th><%= t('.url') %></th>
+        <th><%= t('.status') %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= certificate.url %></td>
+        <td><%= certificate.status %></td>
+      </tr>
+    </tbody>
+<% end %>

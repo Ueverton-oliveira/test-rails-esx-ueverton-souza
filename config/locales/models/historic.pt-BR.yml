@@ -1,0 +1,10 @@
+pt-BR:
+  activerecord:
+    models:
+      historic:
+        one: Histórico
+        other: Históricos
+    
+  attributes:
+    historic:
+      created_at: Data e Hora
