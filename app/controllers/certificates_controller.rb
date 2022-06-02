@@ -6,10 +6,11 @@ class CertificatesController < ApplicationController
   def find
     @url = params[:url]
     @certificates = Certificate.where "url like ?", "%#{@url}%"
-    # certificate_ids = @certificates.ids
     
-    # certificate_ids.each do |id|
-    #   Historic.create!(certificate_id: id)
-    # end
+    certificate_ids = @certificates.ids if @certificates.present?
+    
+    certificate_ids.each do |id|
+      Historic.create!(certificate_id: id)
+    end
   end
 end
