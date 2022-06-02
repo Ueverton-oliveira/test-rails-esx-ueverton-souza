@@ -57,6 +57,11 @@
   ```bash
     docker-compose run --rm app bundle exec rails db:migrate
   ```
+  
+ - Execute population database:
+  ```bash
+    docker-compose run --rm app bundle exec rails db:seed
+  ```
 - Access database console:
   ```bash
       docker-compose run --rm app bundle exec rails dbconsole
