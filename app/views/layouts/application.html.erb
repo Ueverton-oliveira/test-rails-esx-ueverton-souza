@@ -16,7 +16,7 @@
     <% end %>
     <%= form_tag find_certificate_path, method: :get, class:"navbar-form navbar-right" do %>
       <div class='form-group'>
-      <%= text_field_tag :link, @link, placeholder: 'Inserir URL',class:'form-control' %>
+      <%= text_field_tag :url, @url, placeholder: 'Inserir URL',class:'form-control' %>
       <%= button_to "Buscar", nil, class:"btn btn-default"%>
       </div>
     <% end %>
