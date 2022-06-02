@@ -65,13 +65,25 @@
 
   ```bash
     docker-compose run --rm app bundle exec rspec spec
+   
 
   ```
-  image.png
+
+![image](https://user-images.githubusercontent.com/60671993/171512954-dd25f901-41bf-4676-ba92-8dc2b24dd129.png)
+
 
 - Request in /api/v1/historics
 ```bash
-    image.png
 
     Documentation link: https://documenter.getpostman.com/view/12106956/Uz5FJcGU
  ```
+ 
+ ![image](https://user-images.githubusercontent.com/60671993/171513150-df0dd832-0897-4254-8cc4-7dc321d76eb8.png)
+
+- Aplicaion apresentation
+
+<a href="https://www.loom.com/share/8018fc5e9a8242ccbd239be8d24051a8">
+    <p>TestEsx - 1 June 2022 - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/8018fc5e9a8242ccbd239be8d24051a8-with-play.gif">
+  </a>
+
