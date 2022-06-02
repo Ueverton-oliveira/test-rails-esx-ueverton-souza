@@ -80,7 +80,7 @@
  
  ![image](https://user-images.githubusercontent.com/60671993/171513150-df0dd832-0897-4254-8cc4-7dc321d76eb8.png)
 
-- Aplicaion apresentation
+- Aplication apresentation
 
 <a href="https://www.loom.com/share/8018fc5e9a8242ccbd239be8d24051a8">
     <p>TestEsx - 1 June 2022 - Watch Video</p>
