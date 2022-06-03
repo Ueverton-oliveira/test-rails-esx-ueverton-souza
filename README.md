@@ -82,8 +82,6 @@
 
     Documentation link: https://documenter.getpostman.com/view/12106956/Uz5FJcGU
  ```
- 
- ![image](https://user-images.githubusercontent.com/60671993/171513150-df0dd832-0897-4254-8cc4-7dc321d76eb8.png)
 
 - Aplication apresentation
 
